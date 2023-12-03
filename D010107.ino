@@ -9,11 +9,12 @@ double voltage2 = 12.2;
 double current2 = 0.51;
 
 void setup() {
-  display.initializeDisplay();
-  display.clrScr();
+  //display.initializeDisplay();
+  display.clearScreen();
   display.write("     V      A      W\0");
   display.write("     V      A      W\0");
   display.cursorToPosition(0, 0);
+  display.enableDisplay(true);
 
   printValueAt(voltage1, 1, 1);
   printValueAt(current1, 1, 8);
